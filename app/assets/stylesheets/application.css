@@ -1,0 +1,68 @@
+ @import url(https://fonts.googleapis.com/css?family=Irish+Grover);
+
+ body {
+   font-family: fantasy, cursive;
+   text-align: center;
+   background-image: url("wallpaper1.jpg");
+   color: #7C2A30;
+ }
+
+ nav {
+   padding: 15px;
+   background-image: url("banner3.jpg");
+   border-radius: 40px;
+   /*color: white;*/
+   height: 150px;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: black;
+ }
+
+ h1 {
+   font-size: 36px;
+   color: #CC9900;
+ }
+
+ h2 {
+   font-size: 22px;
+ }
+
+ .character {
+   display: inline-block;
+   padding: 15px;
+   border: 1px solid black;
+   border-radius: 40%;
+ }
+
+ .characterS {
+   display: inline-block;
+ }
+
+ .house {
+   display: inline-block;
+   padding: 25px;
+   /*background-image: url("banner.jpg");*/
+   /*width: 150px;
+   text-align: center;*/
+   /*margin: 10px;
+   padding: 5px;
+   border: 1px solid black;
+   border-radius: 10%;*/
+   /*background-color: #CC9900;*/
+ }
+
+ .house img {
+   display: block;
+   width: 145px;
+   height: 200px;
+ }
+
+ img {
+   border-radius: 10px;
+   height: 100px;
+ }
+
+ a {
+    color: #7C2A30;
+}

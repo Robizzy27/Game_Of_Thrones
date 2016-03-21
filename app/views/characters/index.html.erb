@@ -1,0 +1,8 @@
+<h1>The Characters</h1>
+<% @characters.each do |character| %>
+  <div class="character">
+    <h3><%= link_to character.name, character %></h3>
+    <%= image_tag character.image %>
+    <p>House: <%= character.house.name if character.house %></p>
+</div>
+<% end %>
