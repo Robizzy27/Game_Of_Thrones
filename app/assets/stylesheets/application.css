@@ -3,8 +3,9 @@
  body {
    font-family: fantasy, cursive;
    text-align: center;
-   background-image: url("wallpaper1.jpg");
+   background-image: url("background.jpg");
    color: #7C2A30;
+   background-repeat: repeat;
  }
 
  nav {
@@ -31,7 +32,7 @@
  .character {
    display: inline-block;
    padding: 15px;
-   border: 1px solid black;
+   /*border: 1px solid black;*/
    border-radius: 40%;
  }
 
@@ -54,13 +55,16 @@
 
  .house img {
    display: block;
-   width: 145px;
+   width: 175px;
    height: 200px;
+   border-radius: 15%;
+   box-shadow: 5px 5px 5px #888888;
  }
 
  img {
    border-radius: 10px;
-   height: 100px;
+   height: 150px;
+   box-shadow: 5px 5px 5px #888888;
  }
 
  a {
