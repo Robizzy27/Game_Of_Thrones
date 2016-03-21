@@ -1,6 +1,7 @@
 <h1>The regions</h1>
 <% @regions.each do |region| %>
   <div class="region">
-    <h3><%= link_to region.name, region %></h3>
+    <p><%= link_to region.name, region %></p>
+    <%= link_to (image_tag region.image), region %>
   </div>
 <% end %>

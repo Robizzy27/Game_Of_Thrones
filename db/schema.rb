@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20160319184552) do
   create_table "regions", force: :cascade do |t|
     t.string  "name"
     t.integer "king_id"
+    t.string  "image"
   end
 
   add_index "regions", ["king_id"], name: "index_regions_on_king_id"
