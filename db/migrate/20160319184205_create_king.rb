@@ -3,6 +3,7 @@ class CreateKing < ActiveRecord::Migration
     create_table :kings do |t|
       t.string :name
       t.string :image
+      t.string :story
     end
   end
 end

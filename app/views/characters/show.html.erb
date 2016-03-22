@@ -1,5 +1,6 @@
 <h1><%= @character.name %></h1>
+<h2><%= @character.title %></h2>
 <div class="character">
   <%= image_tag @character.image %>
-  <h2><%= @character.house.name %></h2>
+  <p>Belongs to house <%= @character.house.name %> in the region known as <%= @character.house.region.name %>, which is ruled by <%= @character.house.region.king.name %>.</p>
 </div>

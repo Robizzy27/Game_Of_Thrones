@@ -2,6 +2,7 @@
 <% @houses.each do |house| %>
   <div class="house">
     <h2><%= link_to house.name, house %> </h2>
+    Region: <%= house.region.name if house.region %>
     <%= link_to (image_tag house.image), house %>
   </div>
 <% end %>

@@ -1,7 +1,10 @@
-<h1>The <%= @house.name %>'s</h1>
+<h1>House <%= @house.name %></h1>
+<h2>Motto: <%= @house.motto %></h2>
+<p><%= @house.story %></p>
+<h2>Members:</h2>
 <% @house.characters.each do |character| %>
   <div class="character">
-    <h3><%= character.name %></h3>
-    <%= image_tag character.image %>
+    <h3><%= link_to character.name, character %></h3>
+    <%= link_to (image_tag character.image), character %>
   </div>
 <% end %>

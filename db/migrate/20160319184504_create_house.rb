@@ -4,6 +4,8 @@ class CreateHouse < ActiveRecord::Migration
       t.string :name
       t.references :region, index: true, foreign_key: true
       t.string :image
+      t.string :story
+      t.string :motto
     end
   end
 end

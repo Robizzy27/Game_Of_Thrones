@@ -5,6 +5,7 @@ class CreateCharacter < ActiveRecord::Migration
       t.string :title
       t.references :house, index: true, foreign_key: true
       t.string :image
+      t.string :story
     end
   end
 end

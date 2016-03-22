@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160319184552) do
     t.string  "title"
     t.integer "house_id"
     t.string  "image"
+    t.string  "story"
   end
 
   add_index "characters", ["house_id"], name: "index_characters_on_house_id"
@@ -26,6 +27,8 @@ ActiveRecord::Schema.define(version: 20160319184552) do
     t.string  "name"
     t.integer "region_id"
     t.string  "image"
+    t.string  "story"
+    t.string  "motto"
   end
 
   add_index "houses", ["region_id"], name: "index_houses_on_region_id"
@@ -33,12 +36,14 @@ ActiveRecord::Schema.define(version: 20160319184552) do
   create_table "kings", force: :cascade do |t|
     t.string "name"
     t.string "image"
+    t.string "story"
   end
 
   create_table "regions", force: :cascade do |t|
     t.string  "name"
     t.integer "king_id"
     t.string  "image"
+    t.string  "story"
   end
 
   add_index "regions", ["king_id"], name: "index_regions_on_king_id"
