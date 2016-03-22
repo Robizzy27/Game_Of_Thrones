@@ -11,14 +11,19 @@
  nav {
    padding: 15px;
    background-image: url("banner3.jpg");
-   border-radius: 40px;
+   border-radius: 35px;
    /*color: white;*/
-   height: 150px;
+   height: 135px;
    background-size: 100%;
    background-repeat: no-repeat;
    background-size: contain;
    background-color: black;
  }
+
+navbar {
+  font-size: 25px;
+  font-color "white";
+}
 
  h1 {
    font-size: 36px;
@@ -62,6 +67,29 @@
  .characterS {
    display: inline-block;
  }
+
+ .crow {
+   display: inline-block;
+   padding: 25px;
+ }
+
+ .crow img {
+   display: block;
+   width: 375px;
+   /*height: 200px;*/
+   border-radius: 55%;
+   box-shadow: 5px 5px 5px #888888;
+   -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+     -webkit-filter: opacity(0.75);
+ }
+
+ .crow img:hover {
+  -webkit-filter: opacity(1);
+}
 
  .house {
    display: inline-block;
@@ -128,5 +156,5 @@
  }
 
  a {
-    color: #7C2A30;
+    color: "white";
 }

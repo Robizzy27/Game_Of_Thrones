@@ -1,17 +1,28 @@
-<h1>Enrollments#new</h1>
-<p>Find me in app/views/enrollments/new.html.erb</p>
+<h1>Join a House</h1>
+<!-- <p>Find me in app/views/enrollments/new.html.erb</p> -->
 
 <!-- <h1>Welcome to the Sorting Hat!</h1> -->
-<%#= image_tag "http://flavorwire.files.wordpress.com/2009/06/sorting-hat.jpg" %>
+<div class="crow">
+<%= image_tag "crow.jpg" %>
+</div>
 <%= form_for @character, url: {controller: :enrollments, action: :create} do |f| %>
-  <%= f.label :name %>
+  <%= f.label :name %>:
   <%= f.text_field :name %>
 
+  Select a <%= f.label :house %>:
   <%= f.select(:house_id) do %>
     <% @houses.each do |house| %>
       <%= content_tag(:option, house.name, value: house.id) %>
     <% end %>
   <% end %>
+  <!-- <br>
+  Select an <%= f.label :image %>: -->
+    <%#= f.select(:house_id) do %>
+      <%# @houses.each do |house| %>
+        <%#= content_tag(:option, house.name, value: house.id) %>
+      <%# end %>
+    <%# end %>
+  <br>
 
 
   <%= f.submit "Enroll" %>

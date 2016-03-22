@@ -2,6 +2,6 @@
 <% @region.houses.each do |house| %>
   <div class="house">
     <h2>House <%= house.name %></h2>
-    <%= image_tag house.image %>
+    <%= link_to (image_tag house.image), house %>
   </div>
 <% end %>
