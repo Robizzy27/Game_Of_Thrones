@@ -1,0 +1,7 @@
+<h1><%= @king.name %></h1>
+<% @king.regions.each do |region| %>
+  <div class="region">
+    <h2><%= region.name %></h2>
+    <%= link_to (image_tag region.image), region %>
+  </div>
+<% end %>

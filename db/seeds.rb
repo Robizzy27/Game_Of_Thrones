@@ -11,17 +11,16 @@ House.destroy_all
 Region.destroy_all
 King.destroy_all
 
-rob = King.create(name: 'Rob Stark')
-joffrey = King.create(name: 'Joffrey Baratheon')
-balon = King.create(name: 'Balon Greyjoy')
-daenerys = King.create(name: 'Daenerys Targaryen')
-stannis = King.create(name: 'Stannis Baratheon')
+robb = King.create(name: "Robb Stark", image: "robb-stark.jpg")
+joffrey = King.create(name: "Joffrey Baratheon", image: "joffrey-baratheon.jpg")
+balon = King.create(name: "Balon Greyjoy", image: "balon-greyjoy.jpg")
+daenerys = King.create(name: "Daenerys Targaryen", image: "daenerys-targaryen.jpg")
+stannis = King.create(name: "Stannis Baratheon", image: "stannis-baratheon.jpg")
 
-north = Region.create(name: "The North", image: "north.jpg", king: rob)
-vale = Region.create(name: "The Vale", image: "vale.jpg", king: rob)
-riverland = Region.create(name: "Riverlands", image: "riverlands.jpg", king: rob)
+north = Region.create(name: "The North", image: "north.jpg", king: robb)
+vale = Region.create(name: "The Vale", image: "vale.jpg", king: robb)
+riverland = Region.create(name: "Riverlands", image: "riverlands.jpg", king: robb)
 ironisland = Region.create(name: "Iron Islands", image: "ironislands.jpg", king: balon)
-# reach = Region.create(name: "The Reach", king: joffrey)
 stormlands = Region.create(name: "Storm Lands", image: "stormlands.jpg", king: stannis)
 dorne = Region.create(name: "Dorne", image: "dorne.jpg", king: joffrey)
 crownlands = Region.create(name: "Crown Lands", image: "crownlands.jpg", king: daenerys)
@@ -34,7 +33,6 @@ lannister = House.create(name: "Lannister", image: "sigilLannister.jpg", region:
 stark = House.create(name: "Stark", image: "sigilStark.jpg", region: north)
 targaryen = House.create(name: "Targaryen", image: "sigilTargaryen.jpg", region: crownlands)
 tully = House.create(name: "Tully", image: "sigilTully.jpg", region: riverland)
-# tyrell = House.create(name: "Tyrell", image: "tyrell.jpg", region: reach)
 martell = House.create(name: "Martell", image: "sigilMartell.jpg", region: dorne)
 
 eddard = Character.create(name: "Eddard Stark", house: stark, image: "ned-stark.jpg")
@@ -50,7 +48,6 @@ theon = Character.create(name: "Theon Greyjoy", house: greyjoy, image: "theon-gr
 tyrion = Character.create(name: "Tyrion", house: lannister, image: "tyrion-lannister.jpg")
 cersei = Character.create(name: "Cersei Lannister", house: lannister, image: "cersei-lannister.jpg")
 jamie = Character.create(name: "Jamie Lannister", house: lannister, image: "jamie-lannister.jpg")
-# loras = Character.create(name: "Loras Tyrell", house: tyrell, image: "loras-tyrell.jpg")
 viserys = Character.create(name: "Viserys Targaryen", house: targaryen, image: "viserys-targaryen.jpg")
 oberyn = Character.create(name: "Oberyn Martell", house: martell, image: "oberyn-martell.jpg")
 

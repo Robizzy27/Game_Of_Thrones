@@ -34,6 +34,36 @@ navbar {
    font-size: 22px;
  }
 
+ .king {
+   display: inline-block;
+   padding: 15px;
+   /*border: 1px solid black;
+   border-radius: 40%;*/
+ }
+
+ .king img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 115px;
+   height: 175px;
+   border-radius: 15%;
+   box-shadow: 5px 5px 5px #888888;
+   -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+ }
+
+ .king img:hover {
+  /*width: 180px;
+  height: 205px;*/
+  /*-webkit-filter: grayscale(100%);
+  -webkit-filter: hue-rotate(111deg);*/
+  -webkit-filter: opacity(0.50);
+ }
+
  .character {
    display: inline-block;
    padding: 15px;

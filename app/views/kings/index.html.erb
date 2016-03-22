@@ -1,0 +1,7 @@
+<h1>The Kings</h1>
+<% @kings.each do |king| %>
+  <div class="king">
+    <p><%= link_to king.name, king %></p>
+    <%= link_to (image_tag king.image), king %>
+  </div>
+<% end %>

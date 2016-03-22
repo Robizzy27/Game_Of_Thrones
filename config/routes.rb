@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -12,11 +12,11 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
- resources :houses
- resources :characters
- resources :regions
- resources :kings
- resources :enrollments
+resources :kings
+resources :regions
+resources :houses
+resources :characters
+resources :enrollments
 
 # get '/characters' => 'characters#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
