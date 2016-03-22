@@ -1,6 +1,6 @@
-<h1><%= @house.name %></h1>
+<h1>The <%= @house.name %>'s</h1>
 <% @house.characters.each do |character| %>
-  <div class="characterS">
+  <div class="character">
     <h3><%= character.name %></h3>
     <%= image_tag character.image %>
   </div>

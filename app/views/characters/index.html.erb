@@ -2,7 +2,7 @@
 <% @characters.each do |character| %>
   <div class="character">
     <h3><%= link_to character.name, character %></h3>
-    <%= image_tag character.image %>
+    <%= link_to (image_tag character.image), character %>
     <p>House: <%= character.house.name if character.house %></p>
 </div>
 <% end %>
