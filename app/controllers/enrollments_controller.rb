@@ -10,6 +10,7 @@ class EnrollmentsController < ApplicationController
     @character = Character.new
     @character.name = params[:character][:name]
     @character.house_id = params[:character][:house_id]
+    @character.title = params[:character][:title]
     @character.save
     redirect_to characters_path
   end

@@ -1,7 +1,10 @@
 <h1><%= @king.name %></h1>
+<div class="king" style="float:left;"><%= image_tag @king.image %></div>
+<p style="padding-right:10px;"><%= @king.story %></p>
+<h3 style="float:center;">Ruler of: </h3>
 <% @king.regions.each do |region| %>
   <div class="region">
-    <h2><%= region.name %></h2>
+    <h2> <%= region.name %>. </h2>
     <%= link_to (image_tag region.image), region %>
   </div>
 <% end %>

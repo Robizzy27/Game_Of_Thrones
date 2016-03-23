@@ -9,6 +9,7 @@
   <%= f.label :name %>:
   <%= f.text_field :name %>
 
+
   Select a <%= f.label :house %>:
   <%= f.select(:house_id) do %>
     <% @houses.each do |house| %>

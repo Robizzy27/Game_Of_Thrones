@@ -3,4 +3,5 @@
 <div class="character">
   <%= image_tag @character.image %>
   <p>Belongs to house <%= @character.house.name %> in the region known as <%= @character.house.region.name %>, which is ruled by <%= @character.house.region.king.name %>.</p>
+  <p><%= @character.story %></p>
 </div>
