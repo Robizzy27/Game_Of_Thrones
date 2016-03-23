@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <h1>Game of Thrones</h1>
+      <h1>A Song of Ice and Fire</h1>
       <navbar>
         <%= link_to "Home", enrollments_path %> |
         <%= link_to "Kings", kings_path %> |
@@ -17,7 +17,9 @@
         <%= link_to "Characters", characters_path %> |
         <%= link_to "Enrollment", new_enrollment_path %></navbar>
     </nav>
-
+    
+    <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 
     <%= yield %>
 
