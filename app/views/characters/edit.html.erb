@@ -1,0 +1,8 @@
+<h2>Edit Character</h2>
+
+<%= form_for @character do |f| %>
+  <%= f.label :story %>
+  <%= f.text_area :story, :cols => 55, :rows => 10 %>
+
+  <%= f.submit %>
+<% end %>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Westeros!</title>
+    <title>Game of Thrones</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <nav>
-      <h1>Welcome to Westeros!</h1>
+      <h1>Game of Thrones</h1>
       <navbar>
+        <%= link_to "Home", enrollments_path %> |
         <%= link_to "Kings", kings_path %> |
         <%= link_to "Regions", regions_path %> |
         <%= link_to "Houses", houses_path %> |

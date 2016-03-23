@@ -5,3 +5,4 @@
   <p>Belongs to house <%= @character.house.name %> in the region known as <%= @character.house.region.name %>, which is ruled by <%= @character.house.region.king.name %>.</p>
   <p><%= @character.story %></p>
 </div>
+<p><%= link_to("(edit)", edit_character_path(@character)) %></p>
