@@ -1,30 +1,30 @@
-<h1>Join a House</h1>
-<!-- <p>Find me in app/views/enrollments/new.html.erb</p> -->
-
-<!-- <h1>Welcome to the Sorting Hat!</h1> -->
 <div class="crow">
-<%= image_tag "crow.jpg" %>
+  <h2>Join a House</h2>
+  <%= image_tag "crow.jpg" %>
 </div>
 <%= form_for @character, url: {controller: :enrollments, action: :create} do |f| %>
+
   <%= f.label :name %>:
   <%= f.text_field :name %>
 
+  Select a <%= f.label :title %>:
+  <%= f.select :title, ["A hedge Knight", "Prince", "Princess", "Maester", "Member of the Night's Watch", "Lady of house GA", "Lord Commander of the Assembly"] %>
 
-  Select a <%= f.label :house %>:
-  <%= f.select(:house_id) do %>
-    <% @houses.each do |house| %>
-      <%= content_tag(:option, house.name, value: house.id) %>
+  <p>
+    Select a <%= f.label :house %>:
+    <%= f.select(:house_id) do %>
+      <% @houses.each do |house| %>
+        <%= content_tag(:option, house.name, value: house.id) %>
+      <% end %>
     <% end %>
-  <% end %>
-  <!-- <br>
-  Select an <%= f.label :image %>: -->
-    <%#= f.select(:house_id) do %>
-      <%# @houses.each do |house| %>
-        <%#= content_tag(:option, house.name, value: house.id) %>
-      <%# end %>
-    <%# end %>
-  <br>
 
+    Upload your Photo:
+    <%= f.select :image, ["arrynphoto.jpg", "baratheonphoto.jpg", "greyjoyphoto.jpg", "lannisterphoto.jpg", "starkphoto.jpg", "targaryenphoto.jpg", "tullyphoto.jpg", "martellphoto.jpg"] %>
+  </p>
 
+  <p>
+    <p>What is your <%= f.label :story %>:</p>
+    <%= f.text_area :story, :cols => 75, :rows => 10 %>
+  </p>
   <%= f.submit "Enroll" %>
 <% end %>
