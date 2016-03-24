@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: 'enrollments#index'
 
 
@@ -18,6 +19,7 @@ resources :regions
 resources :houses
 resources :characters
 resources :enrollments
+resources :users
 
 # get '/characters' => 'characters#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):

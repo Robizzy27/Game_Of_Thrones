@@ -1,0 +1,8 @@
+<h2><%= @user.username %> <%= link_to("(edit)", edit_user_path(@user)) if @current_user == @user %></h2>
+
+<h3>Submitted Characters</h3>
+<ul>
+  <% @user.characters.each do |character| %>
+    <li><%= link_to character.name, character %></li>
+  <% end %>
+</ul>
