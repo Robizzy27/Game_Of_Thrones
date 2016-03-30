@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'enrollments#index'
+  root to: 'enrollments#index' # NHO: there is no controller action for index in the enrollments controller 
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -14,12 +14,16 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+
+# NHO: Would it make sense to nest any of these resources?
 resources :kings
 resources :regions
 resources :houses
 resources :characters
 resources :enrollments
-resources :users
+resources :users # NHO: don't think you need this resources/controller if you are using devie
+
+# NHO: Looks like you are using a lot of routes, would recommend limiting what routes for each resource you need.
 
 # get '/characters' => 'characters#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):

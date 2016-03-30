@@ -20,6 +20,6 @@ class CharactersController < ApplicationController
 
   private
   def character_params
-    params.require(:character).permit(:story)
+    params.require(:character).permit(:story) # NHO: looks like there is more than just 1 field on Character
   end
 end

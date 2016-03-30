@@ -8,6 +8,7 @@
   </head>
   <body>
     <nav>
+      <!-- NHO: reminder to remove unused code  -->
       <%# if @current_user %>
       <%#= link_to "Welcome, #{@current_user.username}!", user_path(@current_user) %>
       <%#= link_to "Sign Out", session_path, method: :delete %>
@@ -22,7 +23,7 @@
     </nav>
 
     <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
 
