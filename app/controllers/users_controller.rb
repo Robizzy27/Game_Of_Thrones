@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  # NHO: Would be careful with how you implement user Auth; looks like you are handrolling and using devise
+  # Probably would only want to use one or the other.
 
   def index
     @users = User.all
@@ -32,7 +34,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password) # NHO: looks like there are more fields on a user model than just these 2
   end
 
 end

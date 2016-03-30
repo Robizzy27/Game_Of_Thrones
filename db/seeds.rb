@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+# NHO: great seeds!
 Character.destroy_all
 House.destroy_all
 Region.destroy_all
@@ -54,6 +56,7 @@ oberyn = Character.create(name: "Oberyn Martell", house: martell, image: "oberyn
 
 
 
+# NHO: reminder to remove commented out code
 
 # king.regions << region
 # region.houses  << house
